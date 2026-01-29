@@ -194,6 +194,7 @@ header {
 }
 
 .main3 {
+    margin: 1rem 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -208,26 +209,119 @@ header {
     background-color: rgb(20, 15, 30);
     border: 0.5px solid rgb(100, 97, 109);
 
+    transition: transform 0.2s ease-in;
 }
 
 .main3button p {
     color: rgb(182, 175, 189);
+    font: small-caption;
+
 }
 
+.progress {
+    /* background-color: rgb(0, 215, 53); */
+    /* border: 1px solid rgb(0, 215, 53); */
+    grid-area:    3/1/3/3;
+    padding: 0.2rem;
+    border-radius: 20px;
+    /* color: rgb(0, 215, 53); */
+}
+
+.main3button:hover {
+    transform: translatey(-0.5rem) skewY(2deg);
+}
 
 .main4 {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 0.1fr 25fr;
     grid-template-rows: 1fr;
-    padding: 1rem;
+    padding: 0.5rem;
     color: white;
-    align-items: center;
-    place-items: center;
-    border: 0.5px solid rgb(100, 97, 109);
+    border: 0.5px solid rgb(103, 41, 61);
     border-radius: 15px;
     background-color: rgb(36, 15, 25);
+    margin: 1rem 0;
+    align-items: start;
 
 }
+
+.main4.p4 {
+        grid-area:    2/1/3/3;
+
+}
+
 .main4 p {
-    color: rgb(185, 44, 80)
+    color: rgb(185, 44, 80);
+    grid-row: 1/3;
+    place-self: center;
+    align-self: center;
+    font: caption;
+
+}
+
+.main4 span {
+    grid-row: 1/3;
+    color: rgb(185, 44, 80);
+    justify-self: start;
+    align-self: start;
+    font-size: 2rem;
+}
+
+.main4:hover {
+    background-color: rgb(65, 23, 43);
+    transform: scale(1.02);
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: minmax(0, auto);
+    padding: 0 5rem;
+}
+
+.footer_button {
+    width: 5rem;
+    place-items: center;
+    gap: 0.5rem;
+    transition: transform 0.3s ease;
+    display: grid;
+    grid-row: 1fr 1fr;
+}
+
+.footer_img {
+    width: 2rem;
+}
+
+.footer_text {
+    color: white;
+    font: small-caption;
+
+}
+
+.button1 {
+    justify-self: start;
+}
+
+.button2 {
+    justify-self: center;
+}
+
+.button3 {
+    justify-self: end;
+}
+
+.footer_button:hover {
+    .footer_text {
+        color: rgb(0, 215, 53);
+    }
+
+    .footer_img {
+        color: rgb(0, 215, 53);
+    }
+
+    transform: translatey(-0.3rem);
+}
+
+.footer_button:active {
+    border-bottom: 1px solid rgb(0, 215, 53);
 }
