@@ -167,12 +167,11 @@ header {
     width: 7rem;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    border: 1px solid white;
     padding: 0.6rem;
     border-radius: 20px;
     background-color: rgb(20, 15, 30);
     border: 0.5px solid rgb(100, 97, 109);
-    transition: transform 0.3s  ease;
+    transition: transform 0.3s ease;
 }
 
 .main2button:hover {
@@ -184,7 +183,7 @@ header {
 
 .main2img {
     width: 1rem;
-        color: rgb(182, 175, 189);
+    color: rgb(182, 175, 189);
 
 }
 
@@ -192,4 +191,43 @@ header {
     width: 5rem;
     color: rgb(182, 175, 189);
     font: small-caption;
+}
+
+.main3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.main3button {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 0.6rem;
+    border-radius: 20px;
+    background-color: rgb(20, 15, 30);
+    border: 0.5px solid rgb(100, 97, 109);
+
+}
+
+.main3button p {
+    color: rgb(182, 175, 189);
+}
+
+
+.main4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding: 1rem;
+    color: white;
+    align-items: center;
+    place-items: center;
+    border: 0.5px solid rgb(100, 97, 109);
+    border-radius: 15px;
+    background-color: rgb(36, 15, 25);
+
+}
+.main4 p {
+    color: rgb(185, 44, 80)
 }
