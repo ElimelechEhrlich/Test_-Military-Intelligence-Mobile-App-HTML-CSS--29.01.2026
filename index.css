@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(13, 13, 18);
+    margin: 1rem 15rem;
+}
+
+header {
+    display: grid;
+    grid-template-columns: minmax(0, auto);
+    grid-template-rows: minmax(0, auto);
+    align-items: center;
+}
+
+.header.left {
+    background-color: rgb(0, 215, 53);
+    border-radius: 50%;
+    width: 1.5rem;
+    padding: 0.6rem;
+    color: white;
+}
+
+.header.middle {
+    grid-column: 2 ;
+    color: rgb(0, 215, 53);
+    font-weight: bold;
+    justify-self: center;
+    font: caption
+}
+
+.header.right {
+    grid-column: 3;
+    color: rgb(0, 215, 53);
+    font-weight: bold;
+    justify-self: end;
+    padding: 0.2rem 0.8rem;
+    border: 1px solid rgb(0, 215, 53);
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font: small-caption
+}
