@@ -85,6 +85,7 @@ header {
     border-radius: 15px;
 }
 
+
 .main1:hover {
     border-color: rgb(0, 215, 53, 0.7);
 }
@@ -153,4 +154,42 @@ header {
     grid-row: 2/3;
     grid-column: 2/3;
     align-self: start;
+}
+
+.main2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 30rem;
+}
+
+.main2button {
+    width: 7rem;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    border: 1px solid white;
+    padding: 0.6rem;
+    border-radius: 20px;
+    background-color: rgb(20, 15, 30);
+    border: 0.5px solid rgb(100, 97, 109);
+    transition: transform 0.3s  ease;
+}
+
+.main2button:hover {
+    border: 1px solid rgb(0, 215, 53);
+    background-color: rgb(0, 215, 53, 0.2);
+    transform: translatey(-0.3rem);
+
+}
+
+.main2img {
+    width: 1rem;
+        color: rgb(182, 175, 189);
+
+}
+
+.main2text {
+    width: 5rem;
+    color: rgb(182, 175, 189);
+    font: small-caption;
 }
