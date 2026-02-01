@@ -158,13 +158,15 @@ header {
 
 .main2 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 10fr;
     grid-template-rows: 1fr;
-    width: 30rem;
+    /* gap: 1rem; */
+    place-items: start;
+
 }
 
 .main2button {
-    width: 7rem;
+    /* width: 7rem; */
     display: grid;
     grid-template-columns: 1fr 4fr;
     padding: 0.6rem;
@@ -172,6 +174,7 @@ header {
     background-color: rgb(20, 15, 30);
     border: 0.5px solid rgb(100, 97, 109);
     transition: transform 0.3s ease;
+    place-items: start;
 }
 
 .main2button:hover {
@@ -188,9 +191,13 @@ header {
 }
 
 .main2text {
-    width: 5rem;
+    /* width: 5rem; */
     color: rgb(182, 175, 189);
     font: small-caption;
+}
+
+.main2text2 {
+    grid-area: 1/1/2/3;
 }
 
 .main3 {
@@ -198,37 +205,106 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+    gap: 1rem;
 }
 
 .main3button {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    padding: 0.6rem;
+    padding: 0.5rem 1rem;
     border-radius: 20px;
     background-color: rgb(20, 15, 30);
-    border: 0.5px solid rgb(100, 97, 109);
-
+    border: 0.1px solid rgb(117, 111, 122);
+    border-left: 6px solid rgb(1, 214, 52);
+    flex-basis: auto;
     transition: transform 0.2s ease-in;
+    align-items: center;
+    gap: 0.6rem;
 }
 
 .main3button p {
     color: rgb(182, 175, 189);
-    font: small-caption;
+    font: 1rem "Fira Sans", sans-serif;
+    /* padding: 0.3rem 0.6rem; */
 
+
+}
+
+.main3button .pp1 {
+    font-size: 0.7rem;
+    color: rgb(182, 175, 189, 0.5);
+    justify-self: end;
+}
+.main3button .ppp1 {
+    grid-area: 2/1/3/3;
+    justify-self: start;
+}
+
+.main3button .phead {
+    /* font: 0.2rem "Fira Sans", sans-serif; */
+    /* size-adjust: 1rem; */
+    font-size: 0.5rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    align-self: center;
+    justify-self: start;
+    padding: 0.3rem 0.6rem;
+    /* font: xx-small ; */
+    /* height: 1rem; */
+}
+
+.phead.phead1 {
+    color: rgb(185, 44, 80);
+    border-color: rgb(185, 44, 80);
+    background-color: rgb(65, 23, 43);
+}
+
+.phead.phead2 {
+    color: rgb(234, 182, 45);
+    border-color: rgb(234, 182, 45);
+    background-color: rgb(62, 50, 22);
+}
+
+.phead.phead3 {
+    color: rgb(1, 214, 52);
+    border-color: rgb(1, 214, 52);
+    background-color: rgb(7, 65, 32);
+}
+
+.main3button p.percent {
+    color: rgb(1, 214, 52);
+    font-size: 0.7rem;
+    grid-area: 3/2/3/3;
+    align-self: center;
+    justify-self: end;
+    padding-right: 2rem;
 }
 
 .progress {
-    /* background-color: rgb(0, 215, 53); */
-    /* border: 1px solid rgb(0, 215, 53); */
-    grid-area:    3/1/3/3;
-    padding: 0.2rem;
-    border-radius: 20px;
     /* color: rgb(0, 215, 53); */
+    /* border: 1px solid rgb(0, 215, 53); */
+    grid-area: 3/1/3/3;
+    padding: 0.2rem;
+    width: 80%;
+    /* display: inline-block; */
+    /* box-sizing: inherit; */
+    block-size: 0.8rem;
+    /* inline-size: 15rem; */
+    /* border-radius: 20px; */
+    /* border-color: red; */
+}
+
+.main3button.high {
+    border-left: 6px solid rgb(224, 178, 76);
+
 }
 
 .main3button:hover {
-    transform: translatey(-0.5rem) skewY(2deg);
+    transform: translatey(-0.3rem) skewY(1deg);
+    border: 0.1px solid rgb(1, 214, 52);
+    border-left: 6px solid rgb(1, 214, 52);
+    cursor: pointer;
 }
 
 .main4 {
@@ -246,7 +322,7 @@ header {
 }
 
 .main4.p4 {
-        grid-area:    2/1/3/3;
+    grid-area: 2/1/3/3;
 
 }
 
@@ -258,6 +334,8 @@ header {
     font: caption;
 
 }
+
+
 
 .main4 span {
     grid-row: 1/3;
